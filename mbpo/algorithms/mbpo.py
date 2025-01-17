@@ -183,6 +183,7 @@ class MBPO(RLAlgorithm):
         model_metrics = {}
 
         if not self._training_started:
+            #initialising Q function weights
             self._init_training()
 
             self._initial_exploration_hook(
